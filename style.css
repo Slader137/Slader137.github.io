@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to top right, #b967ff, #01cdfe);
+
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+    justify-content: space-evenly;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#formulariodesesion {
+    margin:center;
+    display:flex;
+    flex-direction: column;
+	align-items:center;
+	flex-wrap:wrap;	
+	display:grid;
+	border-width:2px;
+	 border-style: inset;
+
+}
+
