@@ -1,22 +1,22 @@
 body {
     background: url("fondoinicio.png"), linear-gradient(to top right, #b967ff, #01cdfe);
-background-size:cover, contain;
-background-position: center,center;
-background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
     flex-direction: column;
     font-family: "Kode Mono", monospace;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-height: 100vh;
-width: 100vw;
+    height: 100vh;
+    width: 100vw;
     justify-content: space-between;
     display: flex;
 
     align-items: center;
 
     margin: 0;
-    padding:0;
+    padding: 0;
 
 }
 
@@ -42,7 +42,7 @@ width: 100vw;
 
 #correo,
 #contraseña {
-    margin:10px 0;
+    margin: 10px 0;
     font-family: "Rubik", sans-serif;
     padding: 10px;
     margin: 10px 0;
@@ -98,7 +98,7 @@ width: 100vw;
     margin-top: 20px;
     max-width: 10;
     margin-bottom: 20px;
-   
+
     left: 0px;
     right: 0px;
 
@@ -132,6 +132,49 @@ width: 100vw;
 
 #iconoadicional {
     width: 50px;
-    height:45px ;
+    height: 45px;
     border-radius: 10px;
+}
+
+#imagen1 {
+    height: 250px;
+    width: 250px;
+
+}
+
+#imagen2 {
+    height: 250px;
+    width: 250px;
+
+}
+
+#imagen3 {
+    height: 250px;
+    width: 250px;
+
+}
+
+#imagen4 {
+    height: 250px;
+    width: 185px;
+
+}
+
+#imagen5 {
+    height: 250px;
+    width: 250px;
+
+}
+
+#imagen6 {
+    height: 250px;
+    width: 250px;
+
+}
+
+.producto {
+    padding: 5px;
+    border-style: solid;
+    border-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
 }

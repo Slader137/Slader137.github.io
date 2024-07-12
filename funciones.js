@@ -1,16 +1,24 @@
-function Validar(event) {
-    event.preventDefault(); // evita que el formulario vuelva al index.
+
+
+function Validar() {
+
+    event.preventDefault(); // evita que el en el ingreso del formulario vuelva al index.
 
     var correo = document.getElementById("correo").value; // toma el valor del correo ingresado en el input
     var contraseña = document.getElementById("contraseña").value; // toma el valor de la contraseña ingresada en el input
 
     if (correo === "sebas.exe@gmail.com" && contraseña === "moneda") {
+        // aplicar funcion para redirigir a tienda
         alert("Redirigiendo");
         window.location.href = "tienda.html";
-    } else {
+    }
+    else {
         alert("Contraseña o correo incorrectos, intentelo de nuevo");
+
     }
 }
+
+
 
 function SubirFormulario() {
     var name = document.getElementById('nombre').value;
@@ -22,48 +30,36 @@ function SubirFormulario() {
 
     switch (product) {
         case 'producto1':
-            message += 'Bajo Eléctrico';
+            message += 'Colin Mcrae Rally 2.0 PS2';
             break;
         case 'producto2':
-            message += 'Guitarra';
+            message += 'Virtua Tennis 2 Dreamcast';
             break;
         case 'producto3':
-            message += 'Batería Acústica';
+            message += 'Crash Team Racing PS1';
             break;
         case 'producto4':
-            message += 'Micrófono';
+            message += 'Max Payne 2 PS2';
             break;
         case 'producto5':
-            message += 'Amplificador';
+            message += 'Gran Turismo 2 PS1';
             break;
         case 'producto6':
-            message += 'Flauta Dulce';
+            message += 'Crazy Taxi Dreamcast';
             break;
-        default:
-            message += 'Producto desconocido';
     }
     alert(message);
 }
 
+function AgregarComentario() {
+    var comment = document.getElementById('commentBox').value;
 
-function agregarComentario() {
-    let comentario = document.getElementById("cajadecomentarios").value;
-    if (comentario.trim() !== "") {
-        let newp = document.createElement("p");
-        newp.textContent = comentario;
-        let padre = document.getElementById("comentarios");
-        padre.appendChild(newp);
-        document.getElementById("cajadecomentarios").value = ""; 
-    } else {
-        alert("Por favor, escribe un comentario.");
+    if (comment.trim() !== "") {
+        var commentSection = document.getElementById('comentarios');
+        var newComment = document.createElement('p');
+        newComment.textContent = comment;
+        commentSection.appendChild(newComment);
+        document.getElementById('commentBox').value = "";
     }
 }
 
-function eliminarComentario() {
-    let padre = document.getElementById("comentarios");
-    if (padre.children.length > 0) {
-        padre.removeChild(padre.lastChild);
-    } else {
-        alert("No hay comentarios para eliminar.");
-    }
-}
