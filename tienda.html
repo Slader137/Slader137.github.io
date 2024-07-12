@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,16 @@
 <body>
     <div id="navegacion">
         <h1>Tienda de cosas locas</h1>
-
         <hr>
         <nav>
             <ul>
-                <a href="index.html">Inicio</a></li>
-                <a href="tienda.html">Mas productos</a>
-                <a href="https://youtu.be/dQw4w9WgXcQ?si=aK1fRYqD5zJq_6If">Contacto</a>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Más productos</a></li>
+                <li><a href="https://youtu.be/dQw4w9WgXcQ?si=aK1fRYqD5zJq_6If">Contacto</a></li>
             </ul>
         </nav>
         <hr>
         <div id="productos">
-            <p class="principales">
             <div class="producto" idproducto="P1" name="Telecaster" precio="15">
                 <h2>Producto 1</h2>
                 <p>Precio: 15$</p>
@@ -46,31 +44,27 @@
                 <a href="formularioDeCompra.html" class="is-button">Comprar</a>
             </div>
 
-            
-            </p>
-
-            <div class="comentarios-seccion">
-                <div class="comentarios">
-                    <h2>Dejanos tu comentario</h2>
-                    <textarea id="commentBox" placeholder="Escribe tu comentario aquí"></textarea>
-                    <button onclick="AgregarComentario()" class="is-button">Agregar Comentario</button>
-                </div>
-                <div class="comentarios">
-                    <h3>Comentarios de nuestro clientes</h3 >
-                    <div id="comentarios">
-                    </div>
-                </div>
+            <div class="carrito de compras">
+                <h2>Carrito de compras</h2>
+                <p>Productos en el carrito: <span id="carritodecompras">0</span></p>
             </div>
-            
 
-            
+            <div class="comentarios">
+                <h2>Déjanos tu comentario</h2>
+                <textarea id="cajadecomentarios" placeholder="Escribe tu comentario aquí"></textarea>
+                <button onclick="agregarComentario()" class="boton-de-comentarios">Agregar Comentario</button>
+                <button onclick="eliminarComentario()" class="boton-de-comentarios">Eliminar Comentario</button>
+            </div>
+
+            <div class="comentarios">
+                <h3>Comentarios de nuestros clientes</h3>
+                <div id="comentarios"></div>
+            </div>
         </div>
+    </div>
 
-        
+    <script src="funciones.js"></script>
 
-        <script src="script.js"></script>
-
-        </div>
 </body>
 
 </html>
