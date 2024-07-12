@@ -20,7 +20,7 @@ function Validar() {
 
 
 
-function SubirFormulario() {
+function SubirFormulario() {   //se crean las variables de la función
     var name = document.getElementById('nombre').value;
     var address = document.getElementById('direccion').value;
     var product = document.getElementById('producto').value;
@@ -28,7 +28,7 @@ function SubirFormulario() {
 
     var message = 'Compraste ' + quantity + ' unidades de ';
 
-    switch (product) {
+    switch (product) {      //en caso de que alguna de las opciones seleccionadas sea alguno de los productos mostrar mensaje de cuantos compraste
         case 'producto1':
             message += 'Colin Mcrae Rally 2.0 PS2';
             break;
@@ -51,8 +51,8 @@ function SubirFormulario() {
     alert(message);
 }
 
-function agregarComentario() {
-    let comentario = document.getElementById("cajadecomentarios").value;
+function agregarComentario() {      //caja de comentarios
+    let comentario = document.getElementById("cajadecomentarios").value;  //se crea la variable con el texto que agregen los usuarios
     if (comentario.trim() !== "") {
         let newp = document.createElement("p");
         newp.textContent = comentario;
@@ -66,9 +66,9 @@ function agregarComentario() {
 
 function eliminarComentario() {
     let padre = document.getElementById("comentarios");
-    if (padre.children.length > 0) {
+    if (padre.children.length > 0) {         //Si hay un comentario mayor a 0 caracteres, se elimina
         padre.removeChild(padre.lastChild);
-    } else {
+    } else {    //si no se cumple, se manda mensasje de alerta
         alert("No hay comentarios para eliminar.");
     }
 } 
