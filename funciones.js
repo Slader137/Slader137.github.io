@@ -51,15 +51,25 @@ function SubirFormulario() {
     alert(message);
 }
 
-function AgregarComentario() {
-    var comment = document.getElementById('commentBox').value;
-
-    if (comment.trim() !== "") {
-        var commentSection = document.getElementById('comentarios');
-        var newComment = document.createElement('p');
-        newComment.textContent = comment;
-        commentSection.appendChild(newComment);
-        document.getElementById('commentBox').value = "";
+function agregarComentario() {
+    let comentario = document.getElementById("cajadecomentarios").value;
+    if (comentario.trim() !== "") {
+        let newp = document.createElement("p");
+        newp.textContent = comentario;
+        let padre = document.getElementById("comentarios");
+        padre.appendChild(newp);
+        document.getElementById("cajadecomentarios").value = ""; 
+    } else {
+        alert("Por favor, escribe un comentario.");
     }
 }
+
+function eliminarComentario() {
+    let padre = document.getElementById("comentarios");
+    if (padre.children.length > 0) {
+        padre.removeChild(padre.lastChild);
+    } else {
+        alert("No hay comentarios para eliminar.");
+    }
+} 
 
