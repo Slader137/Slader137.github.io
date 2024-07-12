@@ -52,13 +52,13 @@ function SubirFormulario() {
 }
 
 function agregarComentario() {
-    let comentario = document.getElementById("cajadecomentarios").value;
+    let comentario = document.getElementById("nuevocomentario").value;
     if (comentario.trim() !== "") {
         let newp = document.createElement("p");
         newp.textContent = comentario;
         let padre = document.getElementById("comentarios");
         padre.appendChild(newp);
-        document.getElementById("cajadecomentarios").value = ""; 
+        document.getElementById("nuevocomentario").value = ""; 
     } else {
         alert("Por favor, escribe un comentario.");
     }
