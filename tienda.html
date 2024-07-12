@@ -66,28 +66,33 @@
 
 
                     </p>
-
-                <div class="comentarios-seccion">
-                        <div class="comentarios">
-                            <h2>Dejanos tu comentario</h2>
-                            <textarea id="commentBox" placeholder="Escribe tu comentario aquí"></textarea>
-                            <button onclick="AgregarComentario()" class="is-button">Agregar Comentario</button>
-                        </div>
-                       
-                        </div>
-                    </div>
                     <div class="comentarios">
-                        <h3>Comentarios de nuestros clientes</h3>
+                        <h3>Comentarios de nuestro clientes</h3 >
                         <div id="comentarios">
                         </div>
-
+                    </div>
+                <div class="comentarios">
+                    <h2>Déjanos tu comentario</h2>
+                    <textarea id="cajadecomentarios" placeholder="Escribe tu comentario aquí"></textarea>
+                    <button onclick="agregarComentario()" class="boton-de-comentarios">Agregar Comentario</button>
+                    <button onclick="eliminarComentario()" class="boton-de-comentarios">Eliminar Comentario</button>
+                </div>
+    
+    
+    
+                <div class="comentarios">
+                    <h3>Comentarios de nuestros clientes</h3>
+                    <div id="comentarios"></div>
+                </div>
+            </div>
+        </div>
 
 
                 </div>
 
 
 
-                <script src="script.js"></script>
+                <script src="funciones.js"></script>
 
             </div>
 </body>
