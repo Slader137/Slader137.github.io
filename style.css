@@ -239,6 +239,10 @@ padding:1%;
 }
 
 .cabecera {
+width:50%;
+display:flex;
+justify-content: space-evenly;
+align-items: center;
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
@@ -289,8 +293,13 @@ box-sizing: border-box;
 
 .formulario-de-compras {
     position: absolute;
+    border:none;
+    margin-left:20px;
     margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
